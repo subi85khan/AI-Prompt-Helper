@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 17px;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #6a11cb;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.categories button {
+  border: none;
+  background: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.categories button:hover {
+  background: #6a11cb;
+  color: white;
+}
+
+#promptContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.prompt-card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.prompt-card span {
+  display: inline-block;
+  background: #f0eaff;
+  color: #6a11cb;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.prompt-card h2 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.prompt {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.prompt-card button {
+  border: none;
+  background: #6a11cb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.prompt-card button:hover {
+  background: #4d0b9d;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 30px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 27px;
+  }
+
+  #promptContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .categories button {
+    font-size: 13px;
+    padding: 9px 13px;
+  }
+}
