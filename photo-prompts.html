@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <meta name="description" content="Discover the best AI photo prompts for photo editing, realistic portraits, cinematic photos, image enhancement and creative AI image generation. Copy and use prompts easily.">
+  <meta name="description" content="Discover the best AI photo prompts for realistic portraits, cinematic photos, photo editing, HD enhancement and creative AI image generation. Copy prompts easily.">
 
   <meta name="robots" content="index, follow">
 
@@ -25,34 +25,156 @@
   <p>Best AI Photo Editing & Image Generation Prompts</p>
 
   <p>
-    Explore ready-to-copy AI photo prompts for realistic portraits,
-    photo editing, cinematic images, image enhancement and creative
-    AI photo generation.
+    Ready-to-copy AI photo prompts for realistic portraits,
+    cinematic photography, HD enhancement and creative image generation.
   </p>
 </header>
 
 <main>
+
+  <section id="photoPrompts">
+
+    <div class="prompt-card">
+      <h2>📸 Realistic Portrait Prompt</h2>
+
+      <p>
+        Create a highly realistic professional portrait of a person,
+        natural skin texture, detailed facial features, realistic eyes,
+        soft natural lighting, DSLR photography, sharp focus,
+        high detail, photorealistic quality.
+      </p>
+
+      <button onclick="copyPrompt(this)">
+        📋 Copy Prompt
+      </button>
+    </div>
+
+
+    <div class="prompt-card">
+      <h2>✨ HD Photo Enhancement Prompt</h2>
+
+      <p>
+        Enhance this photo naturally, improve image quality,
+        sharpen facial details, restore fine textures,
+        improve lighting and clarity, realistic colors,
+        high resolution, clean details, professional photography,
+        natural skin texture.
+      </p>
+
+      <button onclick="copyPrompt(this)">
+        📋 Copy Prompt
+      </button>
+    </div>
+
+
+    <div class="prompt-card">
+      <h2>🎬 Cinematic Photo Prompt</h2>
+
+      <p>
+        Create a cinematic realistic portrait with dramatic lighting,
+        beautiful depth of field, natural skin texture,
+        cinematic color grading, soft background blur,
+        professional camera photography, ultra detailed,
+        realistic and high quality.
+      </p>
+
+      <button onclick="copyPrompt(this)">
+        📋 Copy Prompt
+      </button>
+    </div>
+
+
+    <div class="prompt-card">
+      <h2>👤 Professional Portrait Prompt</h2>
+
+      <p>
+        Create a professional studio portrait with realistic facial
+        details, clean composition, soft studio lighting,
+        natural skin texture, sharp eyes, detailed hair,
+        professional photography, high resolution and photorealistic quality.
+      </p>
+
+      <button onclick="copyPrompt(this)">
+        📋 Copy Prompt
+      </button>
+    </div>
+
+
+    <div class="prompt-card">
+      <h2>🌄 Outdoor Photography Prompt</h2>
+
+      <p>
+        Create a realistic outdoor portrait in a beautiful natural location,
+        golden hour lighting, realistic skin texture,
+        detailed face and hair, natural shadows,
+        shallow depth of field, DSLR photography,
+        cinematic background and high detail.
+      </p>
+
+      <button onclick="copyPrompt(this)">
+        📋 Copy Prompt
+      </button>
+    </div>
+
+  </section>
+
 
   <section class="seo-content">
 
     <h2>Best AI Photo Prompts</h2>
 
     <p>
-      AI Prompt Helper provides creative and easy-to-use AI photo prompts
-      for creating amazing images. Find prompts for realistic photography,
-      cinematic portraits, photo editing and AI image generation.
+      AI Prompt Helper provides ready-to-copy AI photo prompts
+      for realistic portraits, photo editing, cinematic photography,
+      image enhancement and creative AI image generation.
     </p>
 
-    <h2>AI Photo Editing Prompts</h2>
+    <h2>How to Use These Prompts</h2>
 
     <p>
-      Use AI photo editing prompts to improve your pictures, create
-      realistic effects, change styles and generate professional-looking
-      photos with AI tools.
+      Choose any prompt, tap the Copy Prompt button and paste it
+      into your preferred AI image generation or photo editing tool.
+      You can customize the prompt according to your own photo and idea.
     </p>
 
-    <h2>How to Use AI Photo Prompts</h2>
-
     <p>
-      Choose a prompt, copy the text and paste it into your preferred
-      AI image generation
+      <a href="index.html">🏠 Back to AI Prompt Helper</a>
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p>© 2026 AI Prompt Helper | All Rights Reserved</p>
+</footer>
+
+
+<script>
+function copyPrompt(button) {
+
+  const card = button.parentElement;
+  const text = card.querySelector("p").innerText;
+
+  navigator.clipboard.writeText(text).then(function() {
+
+    const oldText = button.innerText;
+
+    button.innerText = "✅ Copied!";
+
+    setTimeout(function() {
+      button.innerText = oldText;
+    }, 1500);
+
+  }).catch(function() {
+
+    alert("Please copy the prompt manually.");
+
+  });
+
+}
+</script>
+
+</body>
+</html>
