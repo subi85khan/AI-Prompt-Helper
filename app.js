@@ -653,4 +653,5 @@ function copyPrompt(button) {
 
 // ==================== LOAD ALL PROMPTS ====================
 
+console.log("AI Prompt Helper Loaded", prompts.length);
 displayPrompts(prompts);
