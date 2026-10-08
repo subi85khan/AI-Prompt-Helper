@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Helper - Best AI Prompts</title>
+  <meta name="description" content="Find and copy the best AI photo, fashion, background, couple and video prompts.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>✨ AI Prompt Helper</h1>
+  <p>Best AI Prompts — Copy & Create</p>
+</header>
+
+<main>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="🔎 Search prompts...">
+  </div>
+
+  <div class="categories">
+    <button onclick="filterPrompts('All')">All</button>
+    <button onclick="filterPrompts('Photo')">📸 Photo</button>
+    <button onclick="filterPrompts('Fashion')">👗 Fashion</button>
+    <button onclick="filterPrompts('Background')">🌄 Background</button>
+    <button onclick="filterPrompts('Couple')">❤️ Couple</button>
+    <button onclick="filterPrompts('Video')">🎬 Video</button>
+    <button onclick="filterPrompts('Attitude')">😎 Attitude</button>
+  </div>
+
+  <section id="promptContainer">
+
+    <div class="prompt-card" data-category="Photo">
+      <span>📸 Photo</span>
+      <h2>Professional Portrait</h2>
+      <p class="prompt">
+        Create a highly realistic professional portrait of a young person, natural skin texture, detailed face, soft studio lighting, sharp focus, realistic photography, 4K quality.
+      </p>
+      <button onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <div class="prompt-card" data-category="Fashion">
+      <span>👗 Fashion</span>
+      <h2>Luxury Fashion Look</h2>
+      <p class="prompt">
+        Create a stylish luxury fashion portrait, modern outfit, premium fashion style, confident pose, cinematic lighting, realistic skin, detailed clothes, professional photography, 4K.
+      </p>
+      <button onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <div class="prompt-card" data-category="Background">
+      <span>🌄 Background</span>
+      <h2>Mountain Background</h2>
+      <p class="prompt">
+        Keep the person exactly the same and replace the background with beautiful realistic mountains, natural sunlight, cinematic atmosphere, depth of field, highly detailed, photorealistic.
+      </p>
+      <button onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <div class="prompt-card" data-category="Couple">
+      <span>❤️ Couple</span>
+      <h2>Romantic Couple</h2>
+      <p class="prompt">
+        Create a realistic romantic couple portrait, natural expressions, beautiful outdoor location, soft golden hour lighting, cinematic photography, realistic faces, detailed clothes, 4K quality.
+      </p>
+      <button onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <div class="prompt-card" data-category="Video">
+      <span>🎬 Video</span>
+      <h2>Cinematic Walking Video</h2>
+      <p class="prompt">
+        Create a cinematic realistic video of a person walking confidently toward the camera, natural body movement, realistic facial expression, smooth camera movement, cinematic lighting, 4K quality.
+      </p>
+      <button onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <div class="prompt-card" data-category="Attitude">
+      <span>😎 Attitude</span>
+      <h2>Attitude Portrait</h2>
+      <p class="prompt">
+        Create a realistic stylish portrait of a confident person with an attitude pose, modern outfit, dramatic lighting, cinematic background, sharp facial details, professional photography, 4K.
+      </p>
+      <button onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 AI Prompt Helper | All Rights Reserved</p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
